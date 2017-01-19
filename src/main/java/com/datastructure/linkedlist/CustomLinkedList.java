@@ -226,10 +226,10 @@ public class CustomLinkedList {
 			head.setNextNode(null);
 			this.tail = head;
 			while (node1 != null && node2 != null) {
-				Node aux = node2.getNextNode();
+				Node node3 = node2.getNextNode();
 				node2.setNextNode(node1);
 				node1 = node2;
-				node2 = aux;
+				node2 = node3;
 			}
 			this.head = node1;
 
