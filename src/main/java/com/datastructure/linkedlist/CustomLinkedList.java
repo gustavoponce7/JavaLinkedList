@@ -237,7 +237,7 @@ public class CustomLinkedList {
 	}
 	
 	// Reverse the values from the linked list
-	public void reverseListSecondAproach() {
+	public void reverseListSecondApproach() {
 		Node newHead = tail;
 		Node temp = tail;
 		while(!isEmpty()) {

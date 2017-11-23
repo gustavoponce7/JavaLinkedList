@@ -35,7 +35,7 @@ public class Solution {
 		System.out.println("BacK Node: " + linkedList.topBack().getValue());
 		System.out.println("###########REVERSE LIST SECOND APPROACH##########");
 		linkedList.printLinkedList();
-		linkedList.reverseListSecondAproach();
+		linkedList.reverseListSecondApproach();
 		linkedList.printLinkedList();
 	}
 	
