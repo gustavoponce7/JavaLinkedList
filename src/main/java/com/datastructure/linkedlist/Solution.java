@@ -33,6 +33,10 @@ public class Solution {
 		linkedList.printLinkedList();
 		System.out.println("Front Node: " + linkedList.topFront().getValue());
 		System.out.println("BacK Node: " + linkedList.topBack().getValue());
+		System.out.println("###########REVERSE LIST SECOND APPROACH##########");
+		linkedList.printLinkedList();
+		linkedList.reverseListSecondAproach();
+		linkedList.printLinkedList();
 	}
 	
 }

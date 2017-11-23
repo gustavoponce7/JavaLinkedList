@@ -226,13 +226,25 @@ public class CustomLinkedList {
 			head.setNextNode(null);
 			this.tail = head;
 			while (node1 != null && node2 != null) {
-				Node aux = node2.getNextNode();
+				Node node3 = node2.getNextNode();
 				node2.setNextNode(node1);
 				node1 = node2;
-				node2 = aux;
+				node2 = node3;
 			}
 			this.head = node1;
 
 		}
+	}
+	
+	// Reverse the values from the linked list
+	public void reverseListSecondAproach() {
+		Node newHead = tail;
+		Node temp = tail;
+		while(!isEmpty()) {
+			popBack();
+			temp.setNextNode(tail);
+			temp = temp.getNextNode();
+		}
+		head = newHead;
 	}
 }
